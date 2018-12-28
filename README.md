@@ -12,6 +12,7 @@ Powershell utils scripts pra todos que tem que usar windows na empresa mais gost
 ## Features
 
 * Terminal colorido
+* Saida do `ls` colorida com `lsc`
 * Fonte ajustada automaticamente(algumas versões do powershell resetam a configuração de fonte)
 * Sinalização de branch e de alterações no git
 * Leitor de feed do Gizmodo `List_Gizmodo_News` e `Get_Gizmodo_News [id da noticia]`
@@ -30,7 +31,7 @@ Pra instalar é simples, segue o passo a passo
 
 1. Crie uma pasta onde os seus programas serão armazenados
 2. Mapeie esta pasta nas variaveis de ambiente do windows na variavel `PATH`
-3. Coloque os arquivos `setFont.psm1` e `RSSCleanCode.psm1` na pasta criada
+3. Coloque os arquivos `setFont.psm1`, `LSColor.psm1` e `RSSCleanCode.psm1` na pasta criada
 4. Coloque o clone do [colortool](https://github.com/Microsoft/console/tree/master/tools/ColorTool) na pasta em questão
 5. Adicione o arquivo `monokai.itemcolors` na pasta `schemes` que esta no clone do colortool
 
