@@ -2,6 +2,13 @@
 
 Powershell utils scripts pra todos que tem que usar windows na empresa mais gostam do bash
 
+## Compatibilidade
+
+|S.O|Compativel|
+|---|---|
+|Windows 7|Sim|
+|Windows 10|Parcial|
+
 ## Features
 
 * Terminal colorido
