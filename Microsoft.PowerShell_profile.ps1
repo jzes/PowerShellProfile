@@ -1,6 +1,7 @@
-$programas = "C:\Users\jpsneto\programas\"
+$user = "C:\Users\jpsneto"
+$programas = "$user\programas\"
 colortool -q "$programas\schemes\monokai.itemcolors"
-Set-location C:\Users\jpsneto
+Set-location $user
 
 function Write-BranchName () {
     try {
@@ -55,10 +56,10 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 #caminhos
-$lab = "C:\Users\jpsneto\workdir\repos\"
+$lab = "$user\workdir\repos\"
 
 #modulos
-Import-Module C:\Users\jpsneto\programas\RSSCleanCode.psm1
-Import-Module C:\Users\jpsneto\programas\setFont.psm1
+Import-Module $user\programas\RSSCleanCode.psm1
+Import-Module $user\programas\setFont.psm1
 
 Set-ConsoleFont 6
