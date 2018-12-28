@@ -40,7 +40,7 @@ Pra instalar é simples, segue o passo a passo
 2. Execute o comando `new-item $profile -itemtype "file"`
 3. Execute o outro comando `Set-ExecutionPolicy unrestricted`
 4. Abra o arquivo presente em `$profile`, basta o comando `notepad $profile`
-5. Edite o arquivo, troque o valor da variável ´$user´ para o caminho do seu usuário
+5. Edite o arquivo, troque o valor da variável `$user` para o caminho do seu usuário
 6. Copie o conteúdo do arquivo `Microsoft.PowerShell_profile.ps1` para o arquivo aberto
 7. Salve e feche o arquivo
 
