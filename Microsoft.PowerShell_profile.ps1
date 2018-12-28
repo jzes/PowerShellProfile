@@ -61,5 +61,6 @@ $lab = "$user\workdir\repos\"
 #modulos
 Import-Module $user\programas\RSSCleanCode.psm1
 Import-Module $user\programas\setFont.psm1
+Import-Module $user\programas\LSColor.psm1
 
 Set-ConsoleFont 6
