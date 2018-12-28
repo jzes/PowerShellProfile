@@ -1,6 +1,15 @@
 # PowerShell Scripts Utils
 
-Powershell utils scripts pra todos que tem que usar windows na empresa
+Powershell utils scripts pra todos que tem que usar windows na empresa mais gostam do bash
+
+## Features
+
+* Terminal colorido
+* Fonte ajustada automaticamente(algumas versões do powershell resetam a configuração de fonte)
+* Sinalização de branch e de alterações no git
+* Leitor de feed do Gizmodo `List_Gizmodo_News` e `Get_Gizmodo_News [id da noticia]`
+* Leitor de feed do Clean Code Blog `List_Clean_Code_News` e `Get_Clean_Code_News [id da noticia]`
+* Render de HTML no browser `Render_Html [Html a renderizar]`
 
 ## Dependências
 
@@ -31,3 +40,8 @@ Pra instalar é simples, segue o passo a passo
 
 ![alt text](PSResult.PNG "Resultado ")
 
+
+## To Do
+
+* add mais sites ao rss
+* Git recursivo em pastas
