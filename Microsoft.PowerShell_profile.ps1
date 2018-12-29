@@ -1,6 +1,9 @@
+Write-Progress -Activity "Loading" -PercentComplete 10
 $user = "C:\Users\jpsneto"
 $programas = "$user\programas\"
+Write-Progress -Activity "Loading" -PercentComplete 20
 colortool -q "$programas\schemes\monokai.itemcolors"
+Write-Progress -Activity "Loading" -PercentComplete 30
 Set-location $user
 
 function Write-BranchName () {
@@ -49,12 +52,13 @@ function prompt {
 
     return $userPrompt
 }
+Write-Progress -Activity "Loading" -PercentComplete 50
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
-
+Write-Progress -Activity "Loading" -PercentComplete 55
 #caminhos
 $lab = "$user\workdir\repos\"
 
@@ -62,5 +66,10 @@ $lab = "$user\workdir\repos\"
 Import-Module $user\programas\RSSCleanCode.psm1
 Import-Module $user\programas\setFont.psm1
 Import-Module $user\programas\LSColor.psm1
+Write-Progress -Activity "Loading" -PercentComplete 90
+rm alias:\ls
+set-Alias ls lsc
 
+Write-Progress -Activity "Loading" -PercentComplete 100
 Set-ConsoleFont 6
+Clear-Host
